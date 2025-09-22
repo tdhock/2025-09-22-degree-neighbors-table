@@ -517,8 +517,8 @@
 "legend": true,
 "is.variable.value": false,
 "showSelected": true,
-"selected": [ "Linear model with polynomial basis", "Nearest neighbors" ],
-"levels": [ "Linear model with polynomial basis", "Nearest neighbors" ],
+"selected": [ "Linear (polynomial basis)", "Nearest neighbors" ],
+"levels": [ "Linear (polynomial basis)", "Nearest neighbors" ],
 "update": [
  "geom2_line_Linear",
 "geom3_point_Linear",
@@ -836,7 +836,7 @@
  "pathsize":        3,
 "pathcolour": "#0000FF",
 "pathlinetype":        1,
-"label": "Linear model with polynomial basis" 
+"label": "Linear (polynomial basis)" 
 },
 {
  "pathsize":        2,

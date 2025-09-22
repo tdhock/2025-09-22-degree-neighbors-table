@@ -1,5 +1,5 @@
 colour	y	x	clickSelects	showSelected1	showSelected2
-#FF0000	-1.2083973951143	0	constant	Linear model with polynomial basis	test
-#FF0000	-2.67294671261316	3	cubic	Linear model with polynomial basis	test
-#FF0000	-2.21020150563011	2	quadratic	Linear model with polynomial basis	test
-#FF0000	-2.80304884495615	1	linear	Linear model with polynomial basis	test
+#FF0000	-1.2083973951143	0	constant	Linear (polynomial basis)	test
+#FF0000	-2.67294671261316	3	cubic	Linear (polynomial basis)	test
+#FF0000	-2.21020150563011	2	quadratic	Linear (polynomial basis)	test
+#FF0000	-2.80304884495615	1	linear	Linear (polynomial basis)	test
