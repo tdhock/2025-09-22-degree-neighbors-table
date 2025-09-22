@@ -1,0 +1,5 @@
+colour	y	x	hjust	label	clickSelects	showSelected1	showSelected2	group
+#FF0000	0.613120601700546	9	0	constant	constant	Linear model with polynomial basis	test	1
+#FF0000	0.927525321587178	9	0	cubic	cubic	Linear model with polynomial basis	test	2
+#FF0000	-0.174820644780171	9	0	quadratic	quadratic	Linear model with polynomial basis	test	4
+#FF0000	-0.7637321998256	9	0	linear	linear	Linear model with polynomial basis	test	3

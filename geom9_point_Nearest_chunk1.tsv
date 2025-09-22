@@ -1,0 +1,5 @@
+colour	y	x	clickSelects	showSelected1	showSelected2
+#FF0000	-1.21516687922132	6	constant	Nearest neighbors	test
+#FF0000	-2.15729972116836	1	cubic	Nearest neighbors	test
+#FF0000	-1.69146465047131	1	quadratic	Nearest neighbors	test
+#FF0000	-2.25857631578254	3	linear	Nearest neighbors	test

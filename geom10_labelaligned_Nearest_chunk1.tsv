@@ -1,0 +1,5 @@
+colour	y	x	hjust	label	clickSelects	showSelected1	showSelected2	group
+#FF0000	-0.899022184143929	1	1	constant	constant	Nearest neighbors	test	1
+#FF0000	-2.15729972116836	1	1	cubic	cubic	Nearest neighbors	test	2
+#FF0000	-1.69146465047131	1	1	quadratic	quadratic	Nearest neighbors	test	4
+#FF0000	-2.23511048090508	1	1	linear	linear	Nearest neighbors	test	3

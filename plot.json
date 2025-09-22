@@ -1,0 +1,1208 @@
+{
+ "geoms": {
+ "geom1_tallrect_Linear": {
+ "geom": "tallrect",
+"classed": "geom1_tallrect_Linear",
+"aes": {
+ "key": "key",
+"xmin": "min",
+"xmax": "max",
+"clickSelects.variable": "var",
+"clickSelects.value": "click.val",
+"showSelected.variable": "var",
+"showSelected.value": "show.val" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.5,
+"colour": "transparent",
+"fill": "#0000FF",
+"showSelected": "show.val",
+"clickSelects": "click.val",
+"help_showSelected": "polynomial degree",
+"help_clickSelects": "polynomial degree" 
+},
+"types": {
+ "xmin": "numeric",
+"xmax": "numeric",
+"key": "character",
+"clickSelects.variable": "character",
+"clickSelects.value": "integer",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected.variable",
+"showSelected.value" 
+],
+"subset_order": [
+ "showSelected.variable" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_line_Linear": {
+ "geom": "line",
+"classed": "geom2_line_Linear",
+"aes": {
+ "x": "parameter",
+"y": "log10(mse.thresh)",
+"colour": "set",
+"group": "paste(pattern, set)",
+"clickSelects": "pattern",
+"showSelected1": "model",
+"showSelected2": "set" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        5,
+"clickSelects": "pattern",
+"alpha_off":      0.1,
+"showSelected": [ "model", "set" ],
+"help_clickSelects": "pattern",
+"help_showSelected": [ "model", "set" ] 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"group" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_point_Linear": {
+ "geom": "point",
+"classed": "geom3_point_Linear",
+"aes": {
+ "x": "parameter",
+"y": "log10(mse.thresh)",
+"colour": "set",
+"clickSelects": "pattern",
+"showSelected1": "model",
+"showSelected2": "set" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"shape":        1,
+"fill": "#FFFFFF",
+"size":        4,
+"alpha_off":      0.1,
+"clickSelects": "pattern",
+"showSelected": [ "model", "set" ],
+"help_clickSelects": "pattern",
+"help_showSelected": [ "model", "set" ] 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_labelaligned_Linear": {
+ "geom": "label_aligned",
+"classed": "geom4_labelaligned_Linear",
+"aes": {
+ "x": "parameter",
+"y": "log10(mse.thresh)",
+"hjust": "hjust",
+"label": "pattern",
+"colour": "set",
+"clickSelects": "pattern",
+"showSelected1": "model",
+"showSelected2": "set" 
+},
+"params": {
+ "label_r":     0.15,
+"alignment": "vertical",
+"min_distance":      0.1,
+"background_rect": true,
+"na.rm": false,
+"na.rm": false,
+"clickSelects": "pattern",
+"showSelected": [ "model", "set" ],
+"help_clickSelects": "pattern",
+"help_showSelected": [ "model", "set" ] 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"hjust": "numeric",
+"label": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_point_Data": {
+ "geom": "point",
+"classed": "geom5_point_Data",
+"aes": {
+ "x": "x",
+"y": "ynorm",
+"fill": "set",
+"key": "x",
+"showSelected1": "set",
+"showSelected2": "pattern" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"showSelected": [ "set", "pattern" ],
+"help_showSelected": [ "set", "pattern" ] 
+},
+"types": {
+ "fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [
+ "pattern" 
+],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"columns": {
+ "common": [
+ "fill",
+"x",
+"key",
+"showSelected1",
+"group" 
+] 
+},
+"chunks": {
+ "constant": 1,
+"cubic": 2,
+"linear": 3,
+"quadratic": 4 
+},
+"total": 4 
+},
+"geom6_line_Data": {
+ "geom": "line",
+"classed": "geom6_line_Data",
+"aes": {
+ "x": "x",
+"y": "pred.thresh",
+"size": "model",
+"key": "model",
+"group": "model",
+"colour": "model",
+"showSelected1": "pattern",
+"showSelected.variable": "regularization",
+"showSelected.value": "parameter",
+"showSelected3": "model" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "pattern", "parameter", "model" ],
+"help_showSelected": [ "pattern", "model", "one of: [polynomial degree, number of neighbors]" ] 
+},
+"types": {
+ "colour": "rgb",
+"size": "numeric",
+"x": "numeric",
+"y": "numeric",
+"key": "character",
+"group": "character",
+"showSelected1": "character",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
+"showSelected3": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [
+ "pattern" 
+],
+"nest_order": [
+ "showSelected3",
+"showSelected.variable",
+"showSelected.value",
+"group" 
+],
+"subset_order": [
+ "showSelected3",
+"showSelected.variable" 
+],
+"columns": {
+ "common": [
+ "colour",
+"size",
+"key",
+"group",
+"showSelected.variable",
+"showSelected.value",
+"showSelected3" 
+] 
+},
+"chunks": {
+ "constant": 1,
+"cubic": 2,
+"quadratic": 3,
+"linear": 4 
+},
+"total": 4 
+},
+"geom7_tallrect_Nearest": {
+ "geom": "tallrect",
+"classed": "geom7_tallrect_Nearest",
+"aes": {
+ "key": "key",
+"xmin": "min",
+"xmax": "max",
+"clickSelects.variable": "var",
+"clickSelects.value": "click.val",
+"showSelected.variable": "var",
+"showSelected.value": "show.val" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.5,
+"colour": "transparent",
+"fill": "#00FF00",
+"showSelected": "show.val",
+"clickSelects": "click.val",
+"help_showSelected": "number of neighbors",
+"help_clickSelects": "number of neighbors" 
+},
+"types": {
+ "xmin": "numeric",
+"xmax": "numeric",
+"key": "character",
+"clickSelects.variable": "character",
+"clickSelects.value": "integer",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected.variable",
+"showSelected.value" 
+],
+"subset_order": [
+ "showSelected.variable" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom8_line_Nearest": {
+ "geom": "line",
+"classed": "geom8_line_Nearest",
+"aes": {
+ "x": "parameter",
+"y": "log10(mse.thresh)",
+"colour": "set",
+"group": "paste(pattern, set)",
+"clickSelects": "pattern",
+"showSelected1": "model",
+"showSelected2": "set" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        5,
+"clickSelects": "pattern",
+"alpha_off":      0.1,
+"showSelected": [ "model", "set" ],
+"help_clickSelects": "pattern",
+"help_showSelected": [ "model", "set" ] 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"group": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"group" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom9_point_Nearest": {
+ "geom": "point",
+"classed": "geom9_point_Nearest",
+"aes": {
+ "x": "parameter",
+"y": "log10(mse.thresh)",
+"colour": "set",
+"clickSelects": "pattern",
+"showSelected1": "model",
+"showSelected2": "set" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"shape":        1,
+"fill": "#FFFFFF",
+"size":        4,
+"alpha_off":      0.1,
+"clickSelects": "pattern",
+"showSelected": [ "model", "set" ],
+"help_clickSelects": "pattern",
+"help_showSelected": [ "model", "set" ] 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom10_labelaligned_Nearest": {
+ "geom": "label_aligned",
+"classed": "geom10_labelaligned_Nearest",
+"aes": {
+ "x": "parameter",
+"y": "log10(mse.thresh)",
+"hjust": "hjust",
+"label": "pattern",
+"colour": "set",
+"clickSelects": "pattern",
+"showSelected1": "model",
+"showSelected2": "set" 
+},
+"params": {
+ "label_r":     0.15,
+"alignment": "vertical",
+"min_distance":      0.1,
+"background_rect": true,
+"na.rm": false,
+"na.rm": false,
+"clickSelects": "pattern",
+"showSelected": [ "model", "set" ],
+"help_clickSelects": "pattern",
+"help_showSelected": [ "model", "set" ] 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"hjust": "numeric",
+"label": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"duration": {
+ "pattern":     1000,
+"polynomial degree":     1000,
+"number of neighbors":     1000 
+},
+"selectors": {
+ "set": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "test", "train" ],
+"levels": [ "test", "train" ],
+"update": [
+ "geom2_line_Linear",
+"geom3_point_Linear",
+"geom4_labelaligned_Linear",
+"geom5_point_Data",
+"geom8_line_Nearest",
+"geom9_point_Nearest",
+"geom10_labelaligned_Nearest" 
+] 
+},
+"model": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "Linear model with polynomial basis", "Nearest neighbors" ],
+"levels": [ "Linear model with polynomial basis", "Nearest neighbors" ],
+"update": [
+ "geom2_line_Linear",
+"geom3_point_Linear",
+"geom4_labelaligned_Linear",
+"geom6_line_Data",
+"geom8_line_Nearest",
+"geom9_point_Nearest",
+"geom10_labelaligned_Nearest" 
+] 
+},
+"polynomial degree": {
+ "is.variable.value": true,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "1",
+"levels": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"update": [
+ "geom1_tallrect_Linear",
+"geom6_line_Data" 
+],
+"duration":     1000 
+},
+"pattern": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"chunks": "pattern",
+"selected": "linear",
+"levels": [ "constant", "cubic", "linear", "quadratic" ],
+"update": [
+ "geom2_line_Linear",
+"geom3_point_Linear",
+"geom4_labelaligned_Linear",
+"geom5_point_Data",
+"geom6_line_Data",
+"geom8_line_Nearest",
+"geom9_point_Nearest",
+"geom10_labelaligned_Nearest" 
+],
+"duration":     1000 
+},
+"number of neighbors": {
+ "is.variable.value": true,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "3",
+"levels": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+"update": [
+ "geom6_line_Data",
+"geom7_tallrect_Nearest" 
+],
+"duration":     1000 
+} 
+},
+"plots": {
+ "Linear": {
+ "panel_margin_lines":     0.25,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9 
+] 
+],
+"y": [
+ [
+       -4,
+      -3,
+      -2,
+      -1,
+       0,
+       1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -1,
+    -0.5,
+       0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5,
+     5.5,
+       6,
+     6.5,
+       7,
+     7.5,
+       8,
+     8.5,
+       9,
+     9.5,
+      10 
+] 
+],
+"y": [
+ [
+     -4.5,
+      -4,
+    -3.5,
+      -3,
+    -2.5,
+      -2,
+    -1.5,
+      -1,
+    -0.5,
+       0,
+     0.5,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9 
+],
+"xlab": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9" 
+],
+"xrange": [    -1.05,    11.05 ],
+"xline": true,
+"xticks": true,
+"y": [
+       -4,
+      -3,
+      -2,
+      -1,
+       0,
+       1 
+],
+"ylab": [
+ "-4",
+"-3",
+"-2",
+"-1",
+"0",
+"1" 
+],
+"yrange": [ -4.914376, 1.205711 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "polynomial degree",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "log10(mean square error)",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9" 
+],
+"ylabs": [
+ "-4",
+"-3",
+"-2",
+"-1",
+"0",
+"1" 
+],
+"title": "Select polynomial degree",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      250 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_tallrect_Linear",
+"geom2_line_Linear",
+"geom3_point_Linear",
+"geom4_labelaligned_Linear" 
+] 
+},
+"Data": {
+ "panel_margin_lines":     0.25,
+"legend": {
+ "set": {
+ "guide": "legend",
+"geoms": "point",
+"title": "set",
+"class": "set",
+"selector": "set",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pointfill": "#FF0000",
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointsize":        4,
+"pointstroke":      0.5,
+"label": "test" 
+},
+{
+ "pointfill": "#000000",
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointsize":        4,
+"pointstroke":      0.5,
+"label": "train" 
+} 
+] 
+},
+"model": {
+ "guide": "legend",
+"geoms": "path",
+"title": "model",
+"class": "model",
+"selector": "model",
+"is_discrete": true,
+"legend_type": [ "colour", "size" ],
+"text_size": "8.8pt",
+"title_size": "11pt",
+"entries": [
+ {
+ "pathsize":        3,
+"pathcolour": "#0000FF",
+"pathlinetype":        1,
+"label": "Linear model with polynomial basis" 
+},
+{
+ "pathsize":        2,
+"pathcolour": "#00FF00",
+"pathlinetype":        1,
+"label": "Nearest neighbors" 
+} 
+] 
+} 
+},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -5,
+    -2.5,
+       0,
+     2.5,
+       5 
+] 
+],
+"y": [
+ [
+        0,
+     0.4,
+     0.8 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+       -5,
+   -3.75,
+    -2.5,
+   -1.25,
+       0,
+    1.25,
+     2.5,
+    3.75,
+       5 
+] 
+],
+"y": [
+ [
+        0,
+     0.2,
+     0.4,
+     0.6,
+     0.8,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+       -5,
+    -2.5,
+       0,
+     2.5,
+       5 
+],
+"xlab": [
+ "-5.0",
+"-2.5",
+"0.0",
+"2.5",
+"5.0" 
+],
+"xrange": [     -5.5,      5.5 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+     0.4,
+     0.8 
+],
+"ylab": [
+ "0.0",
+"0.4",
+"0.8" 
+],
+"yrange": [ -0.159663, 1.159639 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "input/feature",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "output/label",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-5.0",
+"-2.5",
+"0.0",
+"2.5",
+"5.0" 
+],
+"ylabs": [
+ "0.0",
+"0.4",
+"0.8" 
+],
+"title": "Selected pattern (points) and models (curves)",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      500 
+},
+"span": {
+ "rowspan":        2,
+"colspan": null,
+"last_in_row": true 
+},
+"geoms": [
+ "geom5_point_Data",
+"geom6_line_Data" 
+] 
+},
+"Nearest": {
+ "panel_margin_lines":     0.25,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10 
+] 
+],
+"y": [
+ [
+     -2.5,
+      -2,
+    -1.5,
+      -1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5,
+     5.5,
+       6,
+     6.5,
+       7,
+     7.5,
+       8,
+     8.5,
+       9,
+     9.5,
+      10,
+    10.5,
+      11 
+] 
+],
+"y": [
+ [
+     -2.5,
+   -2.25,
+      -2,
+   -1.75,
+    -1.5,
+   -1.25,
+      -1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+      10 
+],
+"xlab": [
+ "1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10" 
+],
+"xrange": [    -1.05,    11.05 ],
+"xline": true,
+"xticks": true,
+"y": [
+     -2.5,
+      -2,
+    -1.5,
+      -1 
+],
+"ylab": [
+ "-2.5",
+"-2.0",
+"-1.5",
+"-1.0" 
+],
+"yrange": [ -2.603235, -0.8178692 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "number of neighbors",
+"strip_text_xsize": "11pt",
+"xsize": "11pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "log10(mean square error)",
+"strip_text_ysize": "11pt",
+"ysize": "11pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10" 
+],
+"ylabs": [
+ "-2.5",
+"-2.0",
+"-1.5",
+"-1.0" 
+],
+"title": "Select number of neighbors",
+"title_size": "13.2pt",
+"options": {
+ "width":      400,
+"height":      250 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom7_tallrect_Nearest",
+"geom8_line_Nearest",
+"geom9_point_Nearest",
+"geom10_labelaligned_Nearest" 
+] 
+} 
+},
+"source": "https://github.com/tdhock/cs499-spring2020/blob/master/2020-02-03-capacity/figure-polynomial-neighbors-table-interactive.R",
+"title": "Overfitting using linear model polynomial degree and nearest neighbors" 
+}
